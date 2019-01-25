@@ -17,4 +17,4 @@ def clickbait?
   if ClICKBAIT.none? { |phrase| phrase.match title}
     errors.add(:title, "is not clickbait")
   end
-end      
+end
