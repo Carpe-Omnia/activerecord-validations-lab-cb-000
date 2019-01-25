@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
     validate :clickbait?
 
 
-  CLICKBAIT = [
+  Clickbait = [
     /Top [0-9]*/i,
     /Guess/i,
     /Won't Believe/i,
@@ -14,7 +14,7 @@ class Post < ActiveRecord::Base
   ]
 
   def clickbait?
-    if CLICKBAIT.none? { |phrase| phrase.match title}
+    if Clickbait.none? { |phrase| phrase.match title}
       errors.add(:title, "is not clickbait")
     end
   end
