@@ -12,7 +12,7 @@ class Post < ActiveRecord::Base
     /Won't Believe/i,
     /Secret/i
   ]
-
+  
   def clickbait?
     if Clickbait.none? { |phrase| phrase.match title}
       errors.add(:title, "is not clickbait")
