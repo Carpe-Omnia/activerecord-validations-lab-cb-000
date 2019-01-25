@@ -13,8 +13,8 @@ CLICKBAIT = [
   /Secret/i
 ]
 
-def clickbait? 
+def clickbait?
   if ClICKBAIT.none? { |phrase| }
     error.add(:title, "is not clickbait")
-  end 
+  end
 end      
