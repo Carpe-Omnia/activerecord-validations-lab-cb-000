@@ -15,6 +15,6 @@ CLICKBAIT = [
 
 def clickbait?
   if ClICKBAIT.none? { |phrase| }
-    error.add(:title, "is not clickbait")
+    errors.add(:title, "is not clickbait")
   end
 end      
